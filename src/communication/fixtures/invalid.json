@@ -1,0 +1,16 @@
+{
+  "status": "READY",
+  "title": "📁 Exportar conversas para Excel (.xlsx)",
+  "summary": "A tela de Conversas agora permite baixar em Excel (.xlsx) o histórico das conversas que estão filtradas na tela.",
+  "in_practice": "Agora você filtra na tela de Conversas e baixa o .xlsx.",
+  "pull_request_source": "CITED",
+  "evidence": [],
+  "open_questions": [],
+  "links": [
+    {
+      "kind": "blog",
+      "label": "Post no blog",
+      "url": "https://driva.com.br/blog"
+    }
+  ]
+}

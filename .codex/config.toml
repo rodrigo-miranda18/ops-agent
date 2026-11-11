@@ -1,0 +1,51 @@
+default_permissions = ":workspace"
+
+[features]
+network_proxy = true
+
+[mcp_servers.clickup]
+url = "https://mcp.clickup.com/mcp"
+auth = "oauth"
+enabled = true
+
+[permissions.driva-debug-read-network.filesystem]
+":minimal" = "read"
+":workspace_roots" = "read"
+":tmpdir" = "read"
+":slash_tmp" = "read"
+"~/.codex/packages/standalone" = "read"
+
+[permissions.driva-debug-read-network.network]
+enabled = true
+allow_local_binding = true
+
+[permissions.driva-debug-read-network.network.domains]
+"servico3.example.internal" = "allow"
+"**.whatsapp.com" = "allow"
+"**.whatsappbusiness.com" = "allow"
+"**.facebook.com" = "allow"
+"**.meta.com" = "allow"
+"**.metastatus.com" = "allow"
+
+[permissions.driva-communication-read-network.filesystem]
+glob_scan_max_depth = 4
+":minimal" = "read"
+":tmpdir" = "read"
+":slash_tmp" = "read"
+"~/.codex/packages/standalone" = "read"
+
+[permissions.driva-communication-read-network.filesystem.":workspace_roots"]
+"." = "read"
+"**/.env" = "deny"
+
+[permissions.driva-communication-read-network.network]
+enabled = true
+allow_local_binding = true
+
+[permissions.driva-communication-read-network.network.domains]
+"servico3.example.internal" = "allow"
+"**.whatsapp.com" = "allow"
+"**.whatsappbusiness.com" = "allow"
+"**.facebook.com" = "allow"
+"**.meta.com" = "allow"
+"**.metastatus.com" = "allow"

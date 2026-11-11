@@ -1,0 +1,12 @@
+dist
+node_modules
+repos
+results
+state
+presentation
+.playwright-mcp
+package-lock.json
+src/**/*.js
+src/prompts
+src/**/*-prompt.md
+src/**/fixtures

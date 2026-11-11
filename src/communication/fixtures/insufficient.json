@@ -1,0 +1,13 @@
+{
+  "status": "INSUFFICIENT_CONTEXT",
+  "title": "Contexto insuficiente para a comunicação",
+  "summary": "Não foi possível localizar a implementação da funcionalidade descrita no ticket.",
+  "changes": [],
+  "in_practice": "Sem PR ou código confirmado, não há comportamento visível para descrever.",
+  "images": [],
+  "pull_request_source": "NOT_FOUND",
+  "evidence": [],
+  "open_questions": [
+    "Qual PR ou repositório implementa esta funcionalidade?"
+  ]
+}

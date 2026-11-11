@@ -1,0 +1,56 @@
+{
+  "name": "driva-debug-runner",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nest build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint . --max-warnings 0",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "start": "node dist/main.js",
+    "start:dev": "nest start --watch",
+    "diagnose": "node dist/runner.js",
+    "impact": "node dist/impact/impact-runner.js",
+    "impact:history": "node dist/impact/impact-runner.js --all",
+    "communication": "node dist/communication/communication-runner.js",
+    "storage-maintenance": "node dist/storage-maintenance/storage-maintenance-runner.js",
+    "notify": "npm run build && node dist/notify.js",
+    "dry-run": "node dist/runner.js --dry-run",
+    "check": "npm run build && node --check dist/runner.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1161.0",
+    "@aws-sdk/s3-request-presigner": "^3.1161.0",
+    "@nestjs/common": "^11.1.5",
+    "@nestjs/core": "^11.1.5",
+    "@nestjs/platform-express": "^11.1.5",
+    "@nestjs/schedule": "^6.0.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.15.1",
+    "cron": "4.4.0",
+    "dotenv": "^17.2.1",
+    "google-auth-library": "^10.2.1",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@nestjs/cli": "^11.0.10",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.2.1",
+    "eslint": "^10.11.0",
+    "globals": "^17.12.0",
+    "prettier": "^3.9.8",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.70.1",
+    "vitest": "^5.0.1"
+  },
+  "license": "MIT"
+}

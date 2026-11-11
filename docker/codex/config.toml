@@ -1,0 +1,41 @@
+model = "gpt-5.6-sol"
+model_provider = "driva_proxy"
+approval_policy = "never"
+
+[model_providers.driva_proxy]
+name = "Driva VPN model proxy"
+base_url = "http://vpn-host2.example.internal:8317/v1"
+wire_api = "responses"
+env_key = "DRIVA_PROXY_API_KEY"
+
+[permissions.driva-debug-read-network.filesystem]
+":minimal" = "read"
+":workspace_roots" = "read"
+":tmpdir" = "write"
+":slash_tmp" = "write"
+"/app/codex" = "read"
+"/app/state/dependency-cache" = "write"
+"/usr/local/go" = "read"
+"~/.codex/packages/standalone" = "read"
+
+[permissions.driva-debug-read-network.network]
+enabled = true
+allow_local_binding = true
+
+[permissions.driva-communication-read-network.filesystem]
+glob_scan_max_depth = 4
+":minimal" = "read"
+":tmpdir" = "write"
+":slash_tmp" = "write"
+"/app/codex" = "read"
+"/app/state/dependency-cache" = "write"
+"/usr/local/go" = "read"
+"~/.codex/packages/standalone" = "read"
+
+[permissions.driva-communication-read-network.filesystem.":workspace_roots"]
+"." = "read"
+"**/.env" = "deny"
+
+[permissions.driva-communication-read-network.network]
+enabled = true
+allow_local_binding = true

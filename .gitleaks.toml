@@ -1,0 +1,22 @@
+# Configuração do gitleaks para o snapshot público.
+# As exceções abaixo cobrem apenas FIXTURES FALSAS de teste (verificadas manualmente).
+title = "driva-ops-agent (público)"
+
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "threadKey de fixtures de teste do Google Chat (não é segredo)"
+regexTarget = "match"
+regexes = ['''threadKey:\s*'[A-Za-z0-9_-]+'''']
+
+[[allowlists]]
+description = "Fixtures falsas de token/credencial usadas nos testes de sanitização e autenticação"
+paths = [
+  '''src/common/sanitize(\.spec)?\.ts''',
+  '''src/github/.*\.spec\.ts''',
+  '''src/git/git\.spec\.ts''',
+  '''src/clickup/clickup-task\.spec\.ts''',
+  '''src/health/health\.service\.spec\.ts''',
+  '''docs/superpowers/plans/2026-10-03-github-app-auth\.md''',
+]

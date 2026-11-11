@@ -1,0 +1,148 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`buildCommunicationCard > snapshots the insufficient context card without approve and with warnings 1`] = `
+{
+  "cardsV2": [
+    {
+      "card": {
+        "header": {
+          "subtitle": "TASK-1 — Exportar conversas",
+          "title": "Versão 2",
+        },
+        "sections": [
+          {
+            "header": "⚠️ Contexto insuficiente",
+            "widgets": [
+              {
+                "textParagraph": {
+                  "text": "Não foi possível localizar a implementação da funcionalidade descrita no ticket.",
+                },
+              },
+              {
+                "textParagraph": {
+                  "text": "Responda às dúvidas abaixo nesta thread para gerar uma nova versão.",
+                },
+              },
+            ],
+          },
+          {
+            "collapsible": true,
+            "header": "🔎 Evidências",
+            "uncollapsibleWidgetsCount": 1,
+            "widgets": [
+              {
+                "textParagraph": {
+                  "text": "Nenhuma evidência informada.",
+                },
+              },
+            ],
+          },
+          {
+            "header": "❓ Dúvidas",
+            "widgets": [
+              {
+                "textParagraph": {
+                  "text": "• Qual PR ou repositório implementa esta funcionalidade?",
+                },
+              },
+            ],
+          },
+          {
+            "header": "⚠️ Avisos",
+            "widgets": [
+              {
+                "textParagraph": {
+                  "text": "• Não consegui ler o PR #12",
+                },
+              },
+            ],
+          },
+        ],
+      },
+      "cardId": "communication-c1-v2",
+    },
+  ],
+}
+`;
+
+exports[`buildCommunicationCard > snapshots the ready draft card with the approve button 1`] = `
+{
+  "cardsV2": [
+    {
+      "card": {
+        "header": {
+          "subtitle": "TASK-1 — Exportar conversas",
+          "title": "Versão 2",
+        },
+        "sections": [
+          {
+            "header": "📝 Rascunho",
+            "widgets": [
+              {
+                "textParagraph": {
+                  "text": "<b>📁 Exportar conversas para Excel (.xlsx)</b><br>• <b>O que mudou:</b> Revisar o histórico de conversas de uma sequência dependia de pedir a planilha ao time técnico. Agora a tela de Conversas permite baixar em Excel (.xlsx) as conversas que estão filtradas na tela.<br>• <b>Na prática:</b> O arquivo sai com todas as conversas que batem com os filtros aplicados (sequência, vendedor, canal, período, não lidas, com resposta do lead, lead engajado...), não só as que aparecem na tela.<br>- Aba "Leads": uma linha por lead e vendedor, com total de mensagens, quantas foram do lead e quantas do vendedor, data da primeira e da última mensagem e um resumo da conversa.<br>- Aba "Vendedores": consolidado por vendedor, com quantidade de leads, total de mensagens, mensagens recebidas e enviadas.<br>- Só entram mensagens trocadas entre lead e vendedor; eventos do sistema ficam de fora.<br>- A exportação segue a mesma visibilidade da tela de Conversas: cada usuário só exporta o que já pode ver.<br>• Ticket de melhoria aberto por @Carlos Henrique Souza Teixeira: <a href="https://app.clickup.com/t/90000000001/TICKET-10003">https://app.clickup.com/t/90000000001/TICKET-10003</a><br>• 📚 O passo a passo está na Central de Ajuda: <a href="https://servico5.example.internal/exportar-conversas">https://servico5.example.internal/exportar-conversas</a>",
+                },
+              },
+            ],
+          },
+          {
+            "collapsible": true,
+            "header": "🔎 Evidências",
+            "uncollapsibleWidgetsCount": 1,
+            "widgets": [
+              {
+                "textParagraph": {
+                  "text": "• <b>PR:</b> <a href="https://github.com/Example-org/service-04/pull/412">https://github.com/Example-org/service-04/pull/412</a> — Adiciona o endpoint de exportação de conversas em .xlsx com as abas Leads e Vendedores.<br>• <b>Código:</b> service-04/src/conversations/conversations-export.service.ts — A exportação reutiliza os filtros e a regra de visibilidade da listagem de Conversas.",
+                },
+              },
+            ],
+          },
+          {
+            "header": "❓ Dúvidas",
+            "widgets": [
+              {
+                "textParagraph": {
+                  "text": "Nenhuma.",
+                },
+              },
+            ],
+          },
+          {
+            "widgets": [
+              {
+                "buttonList": {
+                  "buttons": [
+                    {
+                      "onClick": {
+                        "action": {
+                          "function": "https://ops.example.com/google-chat/events",
+                          "parameters": [
+                            {
+                              "key": "action",
+                              "value": "communication_approve",
+                            },
+                            {
+                              "key": "communicationId",
+                              "value": "c1",
+                            },
+                            {
+                              "key": "version",
+                              "value": "2",
+                            },
+                          ],
+                        },
+                      },
+                      "text": "Aprovar e publicar",
+                    },
+                  ],
+                },
+              },
+            ],
+          },
+        ],
+      },
+      "cardId": "communication-c1-v2",
+    },
+  ],
+}
+`;

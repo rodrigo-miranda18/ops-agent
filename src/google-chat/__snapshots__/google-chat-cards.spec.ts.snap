@@ -1,0 +1,791 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`snapshots the diagnosis card with an unresolved repository gate 1`] = `
+{
+  "cardsV2": [
+    {
+      "card": {
+        "header": {
+          "subtitle": "44 · Bug",
+          "title": "📍 Ticket: Erro no envio",
+        },
+        "sections": [
+          {
+            "header": "📝 Descrição do ticket",
+            "widgets": [
+              {
+                "textParagraph": {
+                  "text": "Descrição não informada.",
+                },
+              },
+            ],
+          },
+          {
+            "collapsible": true,
+            "header": "🔎 Diagnóstico técnico",
+            "uncollapsibleWidgetsCount": 1,
+            "widgets": [
+              {
+                "textParagraph": {
+                  "text": "Causa técnica",
+                },
+              },
+            ],
+          },
+          {
+            "collapsible": true,
+            "header": "🛠 Ação do time técnico",
+            "uncollapsibleWidgetsCount": 1,
+            "widgets": [
+              {
+                "textParagraph": {
+                  "text": "<b>Decisão:</b> Correção necessária",
+                },
+              },
+              {
+                "textParagraph": {
+                  "text": "<b>Confiança:</b> alta",
+                },
+              },
+              {
+                "textParagraph": {
+                  "text": "<b>Próxima etapa:</b> Repositório não existe no workspace",
+                },
+              },
+              {
+                "textParagraph": {
+                  "text": "<b>Resumo:</b> Corrigir o cálculo do relatório",
+                },
+              },
+            ],
+          },
+          {
+            "collapsible": true,
+            "header": "💬 Comentário sugerido para o CS",
+            "uncollapsibleWidgetsCount": 1,
+            "widgets": [
+              {
+                "textParagraph": {
+                  "text": "Comentário",
+                },
+              },
+            ],
+          },
+          {
+            "widgets": [
+              {
+                "buttonList": {
+                  "buttons": [
+                    {
+                      "onClick": {
+                        "action": {
+                          "function": "https://ops.example.com/google-chat/events",
+                          "parameters": [
+                            {
+                              "key": "action",
+                              "value": "assume_ticket",
+                            },
+                            {
+                              "key": "approvalId",
+                              "value": "approval-3",
+                            },
+                          ],
+                        },
+                      },
+                      "text": "Assumir ticket",
+                    },
+                    {
+                      "onClick": {
+                        "action": {
+                          "function": "https://ops.example.com/google-chat/events",
+                          "parameters": [
+                            {
+                              "key": "action",
+                              "value": "approve_cs_comment",
+                            },
+                            {
+                              "key": "approvalId",
+                              "value": "approval-3",
+                            },
+                          ],
+                        },
+                      },
+                      "text": "Aprovar comentário no ClickUp",
+                    },
+                    {
+                      "onClick": {
+                        "openLink": {
+                          "url": "https://app.clickup.com/t/44",
+                        },
+                      },
+                      "text": "Abrir ticket",
+                    },
+                  ],
+                },
+              },
+            ],
+          },
+        ],
+      },
+      "cardId": "diagnosis-44",
+    },
+  ],
+  "fallbackText": "📍 Erro no envio · 44",
+  "text": "📍 Erro no envio · 44",
+}
+`;
+
+exports[`snapshots the incident diagnosis card with a single new issue 1`] = `
+{
+  "cardsV2": [
+    {
+      "card": {
+        "header": {
+          "subtitle": "grafana-def · Sem classificação",
+          "title": "🚨 Incidente: Latência alta",
+        },
+        "sections": [
+          {
+            "header": "📝 Resumo do incidente",
+            "widgets": [
+              {
+                "textParagraph": {
+                  "text": "Alerta de produção recebido.<br><br>Serviço afetado: service-17, service-04. Severidade: não informada. Início observado: não informado.<br>Origem do alerta: Grafana.",
+                },
+              },
+            ],
+          },
+          {
+            "collapsible": true,
+            "header": "🔎 Diagnóstico técnico",
+            "uncollapsibleWidgetsCount": 1,
+            "widgets": [
+              {
+                "textParagraph": {
+                  "text": "Causa",
+                },
+              },
+            ],
+          },
+          {
+            "collapsible": true,
+            "header": "🛠 Ação do time técnico",
+            "uncollapsibleWidgetsCount": 1,
+            "widgets": [
+              {
+                "textParagraph": {
+                  "text": "<b>Decisão:</b> Evidências insuficientes",
+                },
+              },
+              {
+                "textParagraph": {
+                  "text": "<b>Confiança:</b> média",
+                },
+              },
+              {
+                "textParagraph": {
+                  "text": "<b>Próxima etapa:</b> Nenhuma alteração será feita até obter evidências suficientes.",
+                },
+              },
+              {
+                "textParagraph": {
+                  "text": "<b>Resumo:</b> Corrigir o cálculo do relatório",
+                },
+              },
+            ],
+          },
+          {
+            "header": "🐙 Issues no GitHub",
+            "widgets": [
+              {
+                "textParagraph": {
+                  "text": "<b>service-17</b>: <a href="https://github.com/Example-org/service-17/issues/3">https://github.com/Example-org/service-17/issues/3</a>",
+                },
+              },
+            ],
+          },
+          {
+            "widgets": [
+              {
+                "buttonList": {
+                  "buttons": [
+                    {
+                      "onClick": {
+                        "action": {
+                          "function": "https://ops.example.com/google-chat/events",
+                          "parameters": [
+                            {
+                              "key": "action",
+                              "value": "assume_incident",
+                            },
+                            {
+                              "key": "approvalId",
+                              "value": "incident-2",
+                            },
+                          ],
+                        },
+                      },
+                      "text": "Assumir incidente",
+                    },
+                  ],
+                },
+              },
+            ],
+          },
+        ],
+      },
+      "cardId": "diagnosis-grafana-def",
+    },
+  ],
+  "fallbackText": "🚨 Latência alta",
+  "text": "🚨 Latência alta",
+}
+`;
+
+exports[`snapshots the incident diagnosis card with reused issues 1`] = `
+{
+  "cardsV2": [
+    {
+      "card": {
+        "header": {
+          "subtitle": "grafana-abc · Bug",
+          "title": "🚨 Incidente: Falha no envio de e-mails",
+        },
+        "sections": [
+          {
+            "header": "📝 Resumo do incidente",
+            "widgets": [
+              {
+                "textParagraph": {
+                  "text": "Bounce acima de 5%<br><br>Serviço afetado: service-15. Severidade: critical. Início observado: 2026-09-20T09:30:00.000Z.<br>Origem do alerta: https://grafana.example.com/alerting/1",
+                },
+              },
+            ],
+          },
+          {
+            "collapsible": true,
+            "header": "🔎 Diagnóstico técnico",
+            "uncollapsibleWidgetsCount": 1,
+            "widgets": [
+              {
+                "textParagraph": {
+                  "text": "Causa técnica do incidente",
+                },
+              },
+            ],
+          },
+          {
+            "collapsible": true,
+            "header": "🛠 Ação do time técnico",
+            "uncollapsibleWidgetsCount": 1,
+            "widgets": [
+              {
+                "textParagraph": {
+                  "text": "<b>Decisão:</b> Correção necessária",
+                },
+              },
+              {
+                "textParagraph": {
+                  "text": "<b>Confiança:</b> alta",
+                },
+              },
+              {
+                "textParagraph": {
+                  "text": "<b>Próxima etapa:</b> A remediação será executada automaticamente.",
+                },
+              },
+              {
+                "textParagraph": {
+                  "text": "<b>Resumo:</b> Corrigir o cálculo do relatório",
+                },
+              },
+            ],
+          },
+          {
+            "header": "🐙 Issues no GitHub (recorrência) · 2 repositórios",
+            "widgets": [
+              {
+                "textParagraph": {
+                  "text": "Incidente recorrente: nenhuma issue nova foi aberta, o registro existente foi atualizado com este disparo.<br><b>service-15</b> — primary (recorrência): <a href="https://github.com/Example-org/service-15/issues/7">https://github.com/Example-org/service-15/issues/7</a><br><b>service-04</b> (recorrência): <a href="https://github.com/Example-org/service-04/issues/9">https://github.com/Example-org/service-04/issues/9</a>",
+                },
+              },
+            ],
+          },
+          {
+            "widgets": [
+              {
+                "buttonList": {
+                  "buttons": [
+                    {
+                      "onClick": {
+                        "action": {
+                          "function": "https://ops.example.com/google-chat/events",
+                          "parameters": [
+                            {
+                              "key": "action",
+                              "value": "assume_incident",
+                            },
+                            {
+                              "key": "approvalId",
+                              "value": "incident-1",
+                            },
+                          ],
+                        },
+                      },
+                      "text": "Assumir incidente",
+                    },
+                  ],
+                },
+              },
+            ],
+          },
+        ],
+      },
+      "cardId": "diagnosis-grafana-abc",
+    },
+  ],
+  "fallbackText": "🚨 Falha no envio de e-mails",
+  "text": "🚨 Falha no envio de e-mails",
+}
+`;
+
+exports[`snapshots the remediation card with pull requests, superseded PRs and checks 1`] = `
+{
+  "cardsV2": [
+    {
+      "card": {
+        "header": {
+          "subtitle": "SUP-42 · Pull request opened",
+          "title": "🛠 Ação técnica: Falha no relatório",
+        },
+        "sections": [
+          {
+            "header": "Resultado da implementação",
+            "widgets": [
+              {
+                "textParagraph": {
+                  "text": "<b>Decisão:</b> Correção necessária · confiança alta",
+                },
+              },
+              {
+                "textParagraph": {
+                  "text": "<b>Status da implementação:</b> Pull request opened",
+                },
+              },
+              {
+                "textParagraph": {
+                  "text": "<b>Resumo:</b> Corrige o fuso no filtro",
+                },
+              },
+              {
+                "textParagraph": {
+                  "text": "<b>Repositórios afetados:</b> service-17",
+                },
+              },
+              {
+                "textParagraph": {
+                  "text": "<b>Verificações:</b> service-17: npm test (aprovada); service-17: npm run lint (falhou); service-17: npm run build (sem status)",
+                },
+              },
+              {
+                "textParagraph": {
+                  "text": "<b>PRs:</b> service-17: https://github.com/Example-org/service-17/pull/10<br>service-04: https://github.com/Example-org/service-04/pull/11",
+                },
+              },
+              {
+                "textParagraph": {
+                  "text": "<b>PRs anteriores:</b> service-17: https://github.com/Example-org/service-17/pull/8 (fechado por substituição)",
+                },
+              },
+              {
+                "textParagraph": {
+                  "text": "<b>Motivo:</b> Causa confirmada",
+                },
+              },
+            ],
+          },
+          {
+            "widgets": [
+              {
+                "buttonList": {
+                  "buttons": [
+                    {
+                      "onClick": {
+                        "openLink": {
+                          "url": "https://github.com/Example-org/service-17/pull/10",
+                        },
+                      },
+                      "text": "Abrir PR · service-17",
+                    },
+                    {
+                      "onClick": {
+                        "openLink": {
+                          "url": "https://github.com/Example-org/service-04/pull/11",
+                        },
+                      },
+                      "text": "Abrir PR · service-04",
+                    },
+                  ],
+                },
+              },
+            ],
+          },
+          {
+            "widgets": [
+              {
+                "buttonList": {
+                  "buttons": [
+                    {
+                      "onClick": {
+                        "openLink": {
+                          "url": "https://app.clickup.com/t/42",
+                        },
+                      },
+                      "text": "Abrir ticket",
+                    },
+                  ],
+                },
+              },
+            ],
+          },
+        ],
+      },
+      "cardId": "remediation-42",
+    },
+  ],
+  "fallbackText": "🛠 Falha no relatório · Pull request opened",
+  "text": "🛠 Falha no relatório · Pull request opened",
+}
+`;
+
+exports[`snapshots the remediation card without pull requests or ticket url 1`] = `
+{
+  "cardsV2": [
+    {
+      "card": {
+        "header": {
+          "subtitle": "grafana-abc · No changes",
+          "title": "🛠 Ação técnica: Falha no envio",
+        },
+        "sections": [
+          {
+            "header": "Resultado da implementação",
+            "widgets": [
+              {
+                "textParagraph": {
+                  "text": "<b>Decisão:</b> Melhoria recomendada · confiança alta",
+                },
+              },
+              {
+                "textParagraph": {
+                  "text": "<b>Status da implementação:</b> No changes",
+                },
+              },
+              {
+                "textParagraph": {
+                  "text": "<b>Resumo:</b> Nada alterado",
+                },
+              },
+              {
+                "textParagraph": {
+                  "text": "<b>Repositórios afetados:</b> Nenhum.",
+                },
+              },
+              {
+                "textParagraph": {
+                  "text": "<b>Verificações:</b> Nenhuma verificação registrada.",
+                },
+              },
+              {
+                "textParagraph": {
+                  "text": "<b>PRs:</b> Nenhum PR aberto.",
+                },
+              },
+              {
+                "textParagraph": {
+                  "text": "<b>Motivo:</b> Sem diff",
+                },
+              },
+            ],
+          },
+        ],
+      },
+      "cardId": "remediation-grafana-abc",
+    },
+  ],
+  "fallbackText": "🛠 Falha no envio · No changes",
+  "text": "🛠 Falha no envio · No changes",
+}
+`;
+
+exports[`snapshots the ticket diagnosis card 1`] = `
+{
+  "cardsV2": [
+    {
+      "card": {
+        "header": {
+          "subtitle": "SUP-42 · Bug",
+          "title": "📍 Ticket: Falha no relatório",
+        },
+        "sections": [
+          {
+            "header": "📝 Descrição do ticket",
+            "widgets": [
+              {
+                "textParagraph": {
+                  "text": "<b>Cliente</b> relata _divergência_ no relatório<br>• item 1<br>• item 2",
+                },
+              },
+            ],
+          },
+          {
+            "collapsible": true,
+            "header": "🔎 Diagnóstico técnico",
+            "uncollapsibleWidgetsCount": 1,
+            "widgets": [
+              {
+                "textParagraph": {
+                  "text": "<b>Causa</b>",
+                },
+              },
+              {
+                "textParagraph": {
+                  "text": "O filtro <font color="#5f6368">created_at</font> usa UTC.",
+                },
+              },
+              {
+                "textParagraph": {
+                  "text": "\`\`\`ts<br>const x = 1;<br>\`\`\`",
+                },
+              },
+            ],
+          },
+          {
+            "collapsible": true,
+            "header": "🛠 Ação do time técnico",
+            "uncollapsibleWidgetsCount": 1,
+            "widgets": [
+              {
+                "textParagraph": {
+                  "text": "<b>Decisão:</b> Correção necessária",
+                },
+              },
+              {
+                "textParagraph": {
+                  "text": "<b>Confiança:</b> alta",
+                },
+              },
+              {
+                "textParagraph": {
+                  "text": "<b>Próxima etapa:</b> A remediação será executada automaticamente.",
+                },
+              },
+              {
+                "textParagraph": {
+                  "text": "<b>Resumo:</b> Corrigir o cálculo do relatório",
+                },
+              },
+            ],
+          },
+          {
+            "collapsible": true,
+            "header": "💬 Comentário sugerido para o CS",
+            "uncollapsibleWidgetsCount": 1,
+            "widgets": [
+              {
+                "textParagraph": {
+                  "text": "Olá! Identificamos a causa e o time já está atuando.",
+                },
+              },
+            ],
+          },
+          {
+            "widgets": [
+              {
+                "buttonList": {
+                  "buttons": [
+                    {
+                      "onClick": {
+                        "action": {
+                          "function": "https://ops.example.com/google-chat/events",
+                          "parameters": [
+                            {
+                              "key": "action",
+                              "value": "assume_ticket",
+                            },
+                            {
+                              "key": "approvalId",
+                              "value": "approval-1",
+                            },
+                          ],
+                        },
+                      },
+                      "text": "Assumir ticket",
+                    },
+                    {
+                      "onClick": {
+                        "action": {
+                          "function": "https://ops.example.com/google-chat/events",
+                          "parameters": [
+                            {
+                              "key": "action",
+                              "value": "approve_cs_comment",
+                            },
+                            {
+                              "key": "approvalId",
+                              "value": "approval-1",
+                            },
+                          ],
+                        },
+                      },
+                      "text": "Aprovar comentário no ClickUp",
+                    },
+                    {
+                      "onClick": {
+                        "openLink": {
+                          "url": "https://app.clickup.com/t/42",
+                        },
+                      },
+                      "text": "Abrir ticket",
+                    },
+                  ],
+                },
+              },
+            ],
+          },
+        ],
+      },
+      "cardId": "diagnosis-42",
+    },
+  ],
+  "fallbackText": "📍 Falha no relatório · SUP-42",
+  "text": "📍 Falha no relatório · SUP-42",
+}
+`;
+
+exports[`snapshots the ticket diagnosis card without url or gate 1`] = `
+{
+  "cardsV2": [
+    {
+      "card": {
+        "header": {
+          "subtitle": "43 · Question",
+          "title": "📍 Ticket: Dúvida de uso",
+        },
+        "sections": [
+          {
+            "header": "📝 Descrição do ticket",
+            "widgets": [
+              {
+                "textParagraph": {
+                  "text": "Descrição não informada.",
+                },
+              },
+            ],
+          },
+          {
+            "collapsible": true,
+            "header": "🔎 Diagnóstico técnico",
+            "uncollapsibleWidgetsCount": 1,
+            "widgets": [
+              {
+                "textParagraph": {
+                  "text": "Sem causa técnica.",
+                },
+              },
+            ],
+          },
+          {
+            "collapsible": true,
+            "header": "🛠 Ação do time técnico",
+            "uncollapsibleWidgetsCount": 1,
+            "widgets": [
+              {
+                "textParagraph": {
+                  "text": "<b>Decisão:</b> Nenhuma ação de código necessária",
+                },
+              },
+              {
+                "textParagraph": {
+                  "text": "<b>Confiança:</b> baixa",
+                },
+              },
+              {
+                "textParagraph": {
+                  "text": "<b>Próxima etapa:</b> Nenhuma alteração de código será iniciada.",
+                },
+              },
+              {
+                "textParagraph": {
+                  "text": "<b>Resumo:</b> Nada a fazer",
+                },
+              },
+            ],
+          },
+          {
+            "collapsible": true,
+            "header": "💬 Comentário sugerido para o CS",
+            "uncollapsibleWidgetsCount": 1,
+            "widgets": [
+              {
+                "textParagraph": {
+                  "text": "Comentário.",
+                },
+              },
+            ],
+          },
+          {
+            "widgets": [
+              {
+                "buttonList": {
+                  "buttons": [
+                    {
+                      "onClick": {
+                        "action": {
+                          "function": "https://ops.example.com/google-chat/events",
+                          "parameters": [
+                            {
+                              "key": "action",
+                              "value": "assume_ticket",
+                            },
+                            {
+                              "key": "approvalId",
+                              "value": "approval-2",
+                            },
+                          ],
+                        },
+                      },
+                      "text": "Assumir ticket",
+                    },
+                    {
+                      "onClick": {
+                        "action": {
+                          "function": "https://ops.example.com/google-chat/events",
+                          "parameters": [
+                            {
+                              "key": "action",
+                              "value": "approve_cs_comment",
+                            },
+                            {
+                              "key": "approvalId",
+                              "value": "approval-2",
+                            },
+                          ],
+                        },
+                      },
+                      "text": "Aprovar comentário no ClickUp",
+                    },
+                  ],
+                },
+              },
+            ],
+          },
+        ],
+      },
+      "cardId": "diagnosis-43",
+    },
+  ],
+  "fallbackText": "📍 Dúvida de uso · 43",
+  "text": "📍 Dúvida de uso · 43",
+}
+`;

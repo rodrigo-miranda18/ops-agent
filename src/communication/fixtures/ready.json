@@ -1,0 +1,28 @@
+{
+  "status": "READY",
+  "title": "📁 Exportar conversas para Excel (.xlsx)",
+  "summary": "Revisar o histórico de conversas de uma sequência dependia de pedir a planilha ao time técnico. Agora a tela de Conversas permite baixar em Excel (.xlsx) as conversas que estão filtradas na tela.",
+  "in_practice": "O arquivo sai com todas as conversas que batem com os filtros aplicados (sequência, vendedor, canal, período, não lidas, com resposta do lead, lead engajado...), não só as que aparecem na tela.\n- Aba \"Leads\": uma linha por lead e vendedor, com total de mensagens, quantas foram do lead e quantas do vendedor, data da primeira e da última mensagem e um resumo da conversa.\n- Aba \"Vendedores\": consolidado por vendedor, com quantidade de leads, total de mensagens, mensagens recebidas e enviadas.\n- Só entram mensagens trocadas entre lead e vendedor; eventos do sistema ficam de fora.\n- A exportação segue a mesma visibilidade da tela de Conversas: cada usuário só exporta o que já pode ver.",
+  "links": [
+    {
+      "kind": "help_center",
+      "label": "O passo a passo está na Central de Ajuda",
+      "url": "https://servico5.example.internal/exportar-conversas"
+    }
+  ],
+  "images": [],
+  "pull_request_source": "CITED",
+  "evidence": [
+    {
+      "kind": "pull_request",
+      "reference": "https://github.com/Example-org/service-04/pull/412",
+      "note": "Adiciona o endpoint de exportação de conversas em .xlsx com as abas Leads e Vendedores."
+    },
+    {
+      "kind": "code",
+      "reference": "service-04/src/conversations/conversations-export.service.ts",
+      "note": "A exportação reutiliza os filtros e a regra de visibilidade da listagem de Conversas."
+    }
+  ],
+  "open_questions": []
+}

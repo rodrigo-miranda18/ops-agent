@@ -1,0 +1,16 @@
+.env
+state/*.json
+results/**
+!state/.gitkeep
+!results/.gitkeep
+*.log
+service-account*.json
+dist
+node_modules
+driva-debug-runner/results
+google-aplication-credentials.json
+google-aplication-credentials-v2.json
+state/diagnosis.lock/
+
+# clones dos repositórios investigados (não versionar)
+repos/

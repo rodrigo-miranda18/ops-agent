@@ -1,0 +1,8 @@
+# Caminhos (regex) com fixtures falsas de credenciais em URL, verificadas manualmente.
+# Uso: trufflehog filesystem . --exclude-paths .trufflehog-exclude.txt
+^\./node_modules/
+(^|/)node_modules/
+src/common/sanitize\.spec\.ts$
+src/clickup/clickup-task\.spec\.ts$
+src/git/git\.spec\.ts$
+docs/superpowers/plans/2026-10-03-github-app-auth\.md$
